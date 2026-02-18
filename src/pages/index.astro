@@ -1,0 +1,151 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+---
+
+<SiteLayout title="Ethan Nguyen | Product Operations">
+  <div class="grid gap-10 lg:grid-cols-[340px_1fr]">
+    <!-- Left Column -->
+    <aside class="lg:sticky lg:top-10 lg:h-[calc(100vh-5rem)]">
+      <div class="space-y-8">
+        <!-- Identity -->
+        <section>
+          <h1 class="text-3xl font-semibold tracking-tight">Ethan Nguyen</h1>
+          <p class="mt-1 text-lg text-slate-700">Product Operations</p>
+          <p class="mt-3 text-sm leading-relaxed text-slate-600">
+            Systems • Alignment • Scale
+          </p>
+        </section>
+
+        <!-- Contact -->
+        <section class="space-y-2">
+          <h2 class="text-sm font-semibold uppercase tracking-wide text-slate-500">Contact</h2>
+          <ul class="space-y-1 text-sm">
+            <li>
+              <a class="underline decoration-slate-300 hover:decoration-slate-600" href="mailto:you@example.com">
+                you@example.com
+              </a>
+            </li>
+            <li>
+              <a class="underline decoration-slate-300 hover:decoration-slate-600" href="#" target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a class="underline decoration-slate-300 hover:decoration-slate-600" href="#" target="_blank" rel="noreferrer">
+                GitHub (optional)
+              </a>
+            </li>
+            <li class="text-slate-600">Atlanta, GA (example)</li>
+          </ul>
+        </section>
+
+        <!-- Skills -->
+        <section class="space-y-2">
+          <h2 class="text-sm font-semibold uppercase tracking-wide text-slate-500">Core Skills</h2>
+          <ul class="space-y-1 text-sm text-slate-700">
+            <li>Process Design</li>
+            <li>Cross-Team Enablement</li>
+            <li>Tooling & Automation</li>
+            <li>Metrics & Feedback Loops</li>
+          </ul>
+        </section>
+
+        <!-- Tools -->
+        <section class="space-y-2">
+          <h2 class="text-sm font-semibold uppercase tracking-wide text-slate-500">Tools</h2>
+          <div class="flex flex-wrap gap-2">
+            {["Jira", "Notion", "Confluence", "Slack", "SQL", "Zapier"].map((tool) => (
+              <span class="rounded-full border border-slate-200 px-3 py-1 text-xs text-slate-700">
+                {tool}
+              </span>
+            ))}
+          </div>
+        </section>
+      </div>
+    </aside>
+
+    <!-- Right Column -->
+    <section class="space-y-12">
+      <!-- About -->
+      <section class="space-y-4">
+        <h2 class="text-xl font-semibold">About</h2>
+        <p class="max-w-2xl leading-relaxed text-slate-700">
+          I’m a Product Operations professional focused on designing systems that help product teams move faster without chaos.
+          I work at the intersection of product, engineering, and operations—improving how decisions are made, work is prioritized,
+          and feedback loops close.
+        </p>
+      </section>
+
+      <!-- Experience -->
+      <section class="space-y-6">
+        <h2 class="text-xl font-semibold">Experience</h2>
+
+        <article class="rounded-2xl border border-slate-200 p-6">
+          <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <h3 class="text-base font-semibold">Company Name</h3>
+            <p class="text-sm text-slate-600">Dates</p>
+          </header>
+          <p class="mt-1 text-sm text-slate-700">Product Operations • Team/Org</p>
+          <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-700">
+            <li>Improved X by doing Y (metric if possible).</li>
+            <li>Enabled Z teams via process/tooling rollout.</li>
+            <li>Reduced friction in [workflow] by [change].</li>
+          </ul>
+        </article>
+
+        <article class="rounded-2xl border border-slate-200 p-6">
+          <header class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <h3 class="text-base font-semibold">Company Name</h3>
+            <p class="text-sm text-slate-600">Dates</p>
+          </header>
+          <p class="mt-1 text-sm text-slate-700">Role • Team/Org</p>
+          <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-700">
+            <li>Shipped a process that aligned stakeholders across functions.</li>
+            <li>Built a system that improved visibility and execution.</li>
+            <li>Created a feedback loop that closed within N days (example).</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Systems & Projects -->
+      <section class="space-y-4">
+        <h2 class="text-xl font-semibold">Systems & Projects</h2>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          <a class="group rounded-2xl border border-slate-200 p-5 hover:border-slate-300" href="/projects/intake-system">
+            <h3 class="font-semibold">Product Intake System</h3>
+            <p class="mt-2 text-sm text-slate-700">
+              Centralized intake and triage to align roadmap priorities across teams.
+            </p>
+            <p class="mt-3 text-xs text-slate-500 group-hover:text-slate-700">
+              Case study →
+            </p>
+          </a>
+
+          <a class="group rounded-2xl border border-slate-200 p-5 hover:border-slate-300" href="/projects/release-rituals">
+            <h3 class="font-semibold">Release Ritual Redesign</h3>
+            <p class="mt-2 text-sm text-slate-700">
+              Standardized rituals to improve clarity, execution, and stakeholder confidence.
+            </p>
+            <p class="mt-3 text-xs text-slate-500 group-hover:text-slate-700">
+              Case study →
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="space-y-3">
+        <h2 class="text-xl font-semibold">Education & Certifications</h2>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li><span class="font-semibold">Degree</span> — School, Year</li>
+          <li><span class="font-semibold">Certification</span> — Issuer</li>
+        </ul>
+      </section>
+
+      <footer class="border-t border-slate-200 pt-6 text-sm text-slate-600">
+        <p>© {new Date().getFullYear()} Ethan Nguyen</p>
+      </footer>
+    </section>
+  </div>
+</SiteLayout>
