@@ -96,17 +96,19 @@ import SiteLayout from "../layouts/SiteLayout.astro";
     </aside>
 
     <!-- Right Column -->
-    <section class="space-y-12">
+    <section class="space-y-10">
       <!-- About -->
-      <section class="space-y-4">
+      <section>
         <h2 class="text-xl font-semibold">About</h2>
-        <p class="max-w-2xl leading-relaxed text-slate-700">
+
+        <p class="mt-4 max-w-2xl leading-relaxed text-slate-700">
           I build operating systems for product teams. In fintech environments,
           I improve SLA performance, standardize workflows, and establish
           feedback loops between Support, Engineering, and Product to reduce
           friction and accelerate execution.
         </p>
-        <section class="mt-8 grid gap-9 sm:grid-cols-3">
+
+        <div class="mt-8 grid gap-8 sm:grid-cols-3">
           <div class="min-w-0">
             <p
               class="text-xs font-semibold uppercase tracking-wide text-slate-500"
@@ -114,7 +116,7 @@ import SiteLayout from "../layouts/SiteLayout.astro";
               Workflow Systems
             </p>
             <p class="mt-2 text-sm leading-snug text-slate-700">
-              Intake • Escalation • </br>SLA Optimization
+              Intake • Escalation • SLA Optimization
             </p>
           </div>
 
@@ -136,30 +138,47 @@ import SiteLayout from "../layouts/SiteLayout.astro";
               Tooling &amp; Insights
             </p>
             <p class="mt-2 text-sm leading-snug text-slate-700">
-              FreshService • Dashboards • </br>AI Integrations
+              FreshService • Dashboards • AI Integrations
             </p>
           </div>
-        </section>
+        </div>
       </section>
 
       <!-- Experience -->
-      <section class="mt-16 space-y-6">
+      <section class="space-y-6">
         <h2 class="text-xl font-semibold">Experience</h2>
 
         <article class="rounded-2xl border border-slate-200 p-6">
           <header
             class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between"
           >
-            <h3 class="text-base font-semibold">Company Name</h3>
-            <p class="text-sm text-slate-600">Dates</p>
+            <h3 class="text-base font-semibold">
+              Platform Technical Advisor — Liberis
+            </h3>
+            <p class="text-sm text-slate-600">Jun 2024 – Present</p>
           </header>
-          <p class="mt-1 text-sm text-slate-700">
-            Product Operations • Team/Org
-          </p>
+          <p class="mt-1 text-sm text-slate-700">Embedded Finance / Fintech</p>
           <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-700">
-            <li>Improved X by doing Y (metric if possible).</li>
-            <li>Enabled Z teams via process/tooling rollout.</li>
-            <li>Reduced friction in [workflow] by [change].</li>
+            <li>
+              Improved internal support workflows (FreshService) to increase SLA
+              performance and reduce cross-team resolution friction.
+            </li>
+            <li>
+              Served as first line of defense for high-impact production
+              incidents affecting thousands of SMB merchants.
+            </li>
+            <li>
+              Built operational dashboards across FreshService Analytics, Power
+              BI, Looker, Salesforce, and Datadog.
+            </li>
+            <li>
+              Standardized partner issue intake and escalation processes to
+              improve cross-functional triage.
+            </li>
+            <li>
+              Integrated AI tooling (Claude, ChatGPT, chatbot workflows) into
+              support operations to improve efficiency.
+            </li>
           </ul>
         </article>
 
@@ -167,17 +186,85 @@ import SiteLayout from "../layouts/SiteLayout.astro";
           <header
             class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between"
           >
-            <h3 class="text-base font-semibold">Company Name</h3>
-            <p class="text-sm text-slate-600">Dates</p>
+            <h3 class="text-base font-semibold">
+              Front-End Developer — Popcapacity
+            </h3>
+            <p class="text-sm text-slate-600">Aug 2022 – Jun 2024</p>
           </header>
-          <p class="mt-1 text-sm text-slate-700">Role • Team/Org</p>
           <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-700">
             <li>
-              Shipped a process that aligned stakeholders across functions.
+              Performed structured QA testing and documented reproducible defect
+              reports to improve release quality.
             </li>
-            <li>Built a system that improved visibility and execution.</li>
             <li>
-              Created a feedback loop that closed within N days (example).
+              Translated user needs and feature ideas into clear user stories
+              and implementation-ready requirements.
+            </li>
+            <li>
+              Analyzed usability and performance data to identify friction
+              points and recommend product improvements.
+            </li>
+            <li>
+              Partnered with designers and stakeholders to validate UX changes
+              prior to release.
+            </li>
+          </ul>
+        </article>
+
+        <article class="rounded-2xl border border-slate-200 p-6">
+          <header
+            class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between"
+          >
+            <h3 class="text-base font-semibold">
+              Operations Manager — International Real Estate Dream LLC
+            </h3>
+            <p class="text-sm text-slate-600">Aug 2021 – Aug 2022</p>
+          </header>
+          <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-700">
+            <li>
+              Led brokerage operations, coordinating workflows across agents and
+              stakeholders.
+            </li>
+            <li>
+              Implemented process improvements to increase operational
+              efficiency and KPI visibility.
+            </li>
+            <li>
+              Analyzed housing and rental market data to support pricing and
+              strategy decisions.
+            </li>
+            <li>
+              Built operational reports and presentations to communicate
+              performance trends.
+            </li>
+          </ul>
+        </article>
+
+        <article class="rounded-2xl border border-slate-200 p-6">
+          <header
+            class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between"
+          >
+            <h3 class="text-base font-semibold">
+              Customer Success Manager — Microsoft
+            </h3>
+            <p class="text-sm text-slate-600">Apr 2020 – Aug 2021</p>
+          </header>
+          <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-700">
+            <li>
+              Led implementation planning for SMB and enterprise clients
+              adopting Microsoft cloud solutions.
+            </li>
+            <li>
+              Identified recurring integration challenges and developed
+              repeatable enablement approaches.
+            </li>
+            <li>
+              Designed training frameworks for organizations transitioning to
+              Microsoft 365.
+            </li>
+            <li>
+              Created reporting templates to surface adoption trends and renewal
+              risk signals.
             </li>
           </ul>
         </article>
