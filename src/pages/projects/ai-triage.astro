@@ -1,0 +1,230 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+
+const tools = [
+  "Large Language Model (LLM) APIs",
+  "Prompt Design",
+  "Support Workflows",
+  "Structured Output",
+  "Routing Logic",
+];
+
+const featureCards = [
+  {
+    title: "AI-based classification",
+    text: "Used AI to analyze incoming support requests and assign categories based on issue type, product area, and likely ownership.",
+  },
+  {
+    title: "Priority suggestion",
+    text: "Generated an initial urgency recommendation to help teams distinguish routine requests from higher-impact issues faster.",
+  },
+  {
+    title: "Summary generation",
+    text: "Converted long-form ticket text into shorter internal summaries that were easier for triage and engineering teams to scan.",
+  },
+  {
+    title: "Suggested routing",
+    text: "Produced routing suggestions to reduce ambiguity in handoffs and improve consistency across support workflows.",
+  },
+  {
+    title: "Structured output design",
+    text: "Designed the workflow so model output could be used predictably inside operational processes instead of as unstructured text.",
+  },
+  {
+    title: "Human-in-the-loop review",
+    text: "Kept human review in the process to ensure that AI improved efficiency without replacing judgment for higher-risk decisions.",
+  },
+];
+---
+
+<SiteLayout title="AI-Powered Ticket Triage System | Ethan Nguyen">
+  <article class="mx-auto max-w-5xl space-y-10">
+    <header class="space-y-4">
+      <a
+        class="text-sm underline decoration-slate-300 hover:decoration-slate-600"
+        href="/"
+      >
+        ← Back
+      </a>
+
+      <div class="space-y-3">
+        <p class="text-sm uppercase tracking-[0.2em] text-slate-500">Project</p>
+
+        <h1 class="text-3xl font-semibold tracking-tight sm:text-4xl">
+          AI-Powered Ticket Triage System
+        </h1>
+
+        <p class="max-w-3xl text-base leading-7 text-slate-700 sm:text-lg">
+          Designed an AI-assisted triage workflow that classified incoming
+          support requests, suggested routing and urgency, and generated
+          structured summaries to reduce manual intake friction.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap gap-2 pt-2">
+        {
+          tools.map((tool) => (
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
+              {tool}
+            </span>
+          ))
+        }
+      </div>
+    </header>
+
+    <section class="grid gap-4 sm:grid-cols-3">
+      <div class="rounded-2xl border border-slate-200 bg-white p-5">
+        <p class="text-sm text-slate-500">Focus</p>
+        <p class="mt-2 font-semibold text-slate-900">
+          AI-enabled workflow design
+        </p>
+      </div>
+
+      <div class="rounded-2xl border border-slate-200 bg-white p-5">
+        <p class="text-sm text-slate-500">Core outcome</p>
+        <p class="mt-2 font-semibold text-slate-900">
+          Faster, more consistent triage
+        </p>
+      </div>
+
+      <div class="rounded-2xl border border-slate-200 bg-white p-5">
+        <p class="text-sm text-slate-500">Approach</p>
+        <p class="mt-2 font-semibold text-slate-900">
+          Human-in-the-loop AI assistance
+        </p>
+      </div>
+    </section>
+
+    <section class="grid gap-6 lg:grid-cols-[1fr_1.2fr]">
+      <div class="space-y-3 rounded-2xl border border-slate-200 bg-white p-6">
+        <h2 class="text-xl font-semibold">The Problem</h2>
+        <p class="leading-7 text-slate-700">
+          Incoming support requests often varied widely in clarity, urgency, and
+          completeness, which made triage slower and less consistent than it
+          needed to be.
+        </p>
+        <p class="leading-7 text-slate-700">
+          Similar issues could be categorized differently depending on who
+          reviewed them, and long ticket bodies added friction to engineering
+          and operations workflows.
+        </p>
+        <p class="leading-7 text-slate-700">
+          The team and partners needed a way to improve ticket intake consistency without removing
+          human judgment from higher-risk decisions.
+        </p>
+      </div>
+
+      <div class="space-y-3 rounded-2xl border border-slate-200 bg-white p-6">
+        <h2 class="text-xl font-semibold">The Solution</h2>
+        <p class="leading-7 text-slate-700">
+          I designed an AI-assisted triage layer where an LLM reviewed ticket
+          content and returned structured outputs for classification, urgency,
+          routing, and summarization.
+        </p>
+        <p class="leading-7 text-slate-700">
+          Rather than replacing support review, the system served as a
+          first-pass assistant that reduced repetitive triage work and improved
+          consistency across intake workflows.
+        </p>
+        <p class="leading-7 text-slate-700">
+          This created a more scalable foundation for support operations while
+          keeping final decision-making with humans.
+        </p>
+      </div>
+    </section>
+
+    <section class="space-y-4 rounded-2xl border border-slate-200 bg-white p-6">
+      <h2 class="text-xl font-semibold">Workflow</h2>
+      <p class="text-slate-700">
+        From raw support request to structured triage suggestion.
+      </p>
+
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        <div class="rounded-2xl bg-slate-100 p-4 text-center">
+          <p class="text-sm text-slate-500">1</p>
+          <p class="mt-2 font-medium">Incoming ticket</p>
+        </div>
+        <div class="rounded-2xl bg-slate-100 p-4 text-center">
+          <p class="text-sm text-slate-500">2</p>
+          <p class="mt-2 font-medium">LLM analysis</p>
+        </div>
+        <div class="rounded-2xl bg-slate-100 p-4 text-center">
+          <p class="text-sm text-slate-500">3</p>
+          <p class="mt-2 font-medium">Structured output</p>
+        </div>
+        <div class="rounded-2xl bg-slate-100 p-4 text-center">
+          <p class="text-sm text-slate-500">4</p>
+          <p class="mt-2 font-medium">Suggested routing</p>
+        </div>
+        <div class="rounded-2xl bg-slate-100 p-4 text-center">
+          <p class="text-sm text-slate-500">5</p>
+          <p class="mt-2 font-medium">Human review</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-xl font-semibold">Key Features</h2>
+
+      <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        {
+          featureCards.map((feature) => (
+            <div class="rounded-2xl border border-slate-200 bg-white p-5">
+              <h3 class="font-semibold text-slate-900">{feature.title}</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-700">
+                {feature.text}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="grid gap-6 lg:grid-cols-2">
+      <div class="space-y-3 rounded-2xl border border-slate-200 bg-white p-6">
+        <h2 class="text-xl font-semibold">Before</h2>
+        <ul class="list-disc space-y-2 pl-5 text-slate-700">
+          <li>Inconsistent categorization across tickets</li>
+          <li>Longer review time for verbose requests</li>
+          <li>More ambiguity around urgency and ownership</li>
+          <li>Repetitive effort during triage</li>
+          <li>Limited standardization across reviewers</li>
+        </ul>
+      </div>
+
+      <div class="space-y-3 rounded-2xl border border-slate-200 bg-white p-6">
+        <h2 class="text-xl font-semibold">After</h2>
+        <ul class="list-disc space-y-2 pl-5 text-slate-700">
+          <li>Faster first-pass triage</li>
+          <li>More consistent categorization and routing</li>
+          <li>Easier-to-scan internal summaries</li>
+          <li>Reduced repetitive manual analysis</li>
+          <li>Human oversight preserved for final decisions</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+      <div class="space-y-3 rounded-2xl border border-slate-200 bg-white p-6">
+        <h2 class="text-xl font-semibold">Outcomes</h2>
+        <ul class="list-disc space-y-2 pl-5 text-slate-700">
+          <li>Reduced triage friction for support workflows</li>
+          <li>Improved intake consistency across tickets</li>
+          <li>Demonstrated practical AI use for operational augmentation</li>
+          <li>Created a foundation for future workflow automation</li>
+        </ul>
+      </div>
+
+      <div class="space-y-3 rounded-2xl border border-slate-200 bg-white p-6">
+        <h2 class="text-xl font-semibold">What I’d Improve Next</h2>
+        <ul class="list-disc space-y-2 pl-5 text-slate-700">
+          <li>Confidence scoring for model outputs</li>
+          <li>Better routing logic tied to historical ticket data</li>
+          <li>Escalation triggers for higher-risk issue types</li>
+          <li>Feedback loop to improve prompts over time</li>
+          <li>Dashboarding for triage quality and model usefulness</li>
+        </ul>
+      </div>
+    </section>
+  </article>
+</SiteLayout>
