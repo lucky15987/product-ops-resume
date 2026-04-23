@@ -14,7 +14,7 @@ import SiteLayout from "../layouts/SiteLayout.astro";
             Product Operations | Fintech & Workflow Systems
           </p>
           <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Workflow Systems • Escalations • Feedback Loops
+            Automation Process Integration • Escalations • Feedback Loops
           </p>
         </section>
 
@@ -69,7 +69,7 @@ import SiteLayout from "../layouts/SiteLayout.astro";
             <li>Process Design</li>
             <li>Cross-Team Enablement</li>
             <li>Tooling & Automation</li>
-            <li>Metrics & Feedback Loops</li>
+            <li>Metrics & Data Analytics</li>
           </ul>
         </section>
 
@@ -82,13 +82,20 @@ import SiteLayout from "../layouts/SiteLayout.astro";
           </h2>
           <div class="flex flex-wrap gap-2">
             {
-              ["Jira", "Notion", "Confluence", "Slack", "SQL", "Zapier"].map(
-                (tool) => (
-                  <span class="rounded-full border border-slate-200 px-3 py-1 text-xs text-slate-700">
-                    {tool}
-                  </span>
-                ),
-              )
+              [
+                "PowerBI",
+                "Notion",
+                "Linear",
+                "Slack",
+                "SQL",
+                "Salesforce",
+                "DataDog",
+                "Incident.io",
+              ].map((tool) => (
+                <span class="rounded-full border border-slate-200 px-3 py-1 text-xs text-slate-700">
+                  {tool}
+                </span>
+              ))
             }
           </div>
         </section>
@@ -116,7 +123,7 @@ import SiteLayout from "../layouts/SiteLayout.astro";
               Workflow Systems
             </p>
             <p class="mt-2 text-sm leading-snug text-slate-700">
-              Intake • Escalation • SLA Optimization
+              Issue Intake • Escalation • SLA Optimization
             </p>
           </div>
 
@@ -160,24 +167,32 @@ import SiteLayout from "../layouts/SiteLayout.astro";
           <p class="mt-1 text-sm text-slate-700">Embedded Finance / Fintech</p>
           <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-700">
             <li>
-              Improved internal support workflows (FreshService) to increase SLA
-              performance and reduce cross-team resolution friction.
+              Designed and implemented an automated escalation workflow
+              connecting FreshService, Slack, and Linear, reducing manual
+              escalation effort and improving engineering intake consistency
             </li>
+
             <li>
-              Served as first line of defense for high-impact production
-              incidents affecting thousands of SMB merchants.
+              Led incident response for high-impact platform issues, reducing
+              time-to-resolution by improving coordination across engineering
+              and operations
             </li>
+
             <li>
               Built operational dashboards across FreshService Analytics, Power
-              BI, Looker, Salesforce, and Datadog.
+              BI, Looker, and Datadog, increasing visibility into support
+              performance and escalation trends
             </li>
+
             <li>
-              Standardized partner issue intake and escalation processes to
-              improve cross-functional triage.
+              Standardized partner issue intake and escalation processes,
+              reducing cross-team friction and improving triage consistency
             </li>
+
             <li>
-              Integrated AI tooling (Claude, ChatGPT, chatbot workflows) into
-              support operations to improve efficiency.
+              Prototyped AI-assisted workflows (Claude, ChatGPT) to enhance
+              ticket triage, reducing repetitive analysis and improving
+              categorization accuracy
             </li>
           </ul>
         </article>
@@ -191,22 +206,36 @@ import SiteLayout from "../layouts/SiteLayout.astro";
             </h3>
             <p class="text-sm text-slate-600">Aug 2022 – Jun 2024</p>
           </header>
+          <p class="mt-1 text-sm text-slate-700">Logistics / Supply Chain</p>
           <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-700">
             <li>
-              Performed structured QA testing and documented reproducible defect
-              reports to improve release quality.
+              Translated user needs and product ideas into structured user
+              stories and implementation-ready requirements, reducing ambiguity
+              between product and engineering during development cycles
             </li>
+
             <li>
-              Translated user needs and feature ideas into clear user stories
-              and implementation-ready requirements.
+              Identified usability and workflow friction points through testing
+              and analysis, improving overall product experience and reducing
+              user confusion
             </li>
+
             <li>
-              Analyzed usability and performance data to identify friction
-              points and recommend product improvements.
+              Performed structured QA testing and created reproducible defect
+              reports, reducing back-and-forth during releases and improving
+              release reliability
             </li>
+
             <li>
-              Partnered with designers and stakeholders to validate UX changes
-              prior to release.
+              Collaborated with product managers and designers to validate
+              features and UX decisions prior to release, increasing confidence
+              in shipped changes
+            </li>
+
+            <li>
+              Improved front-end consistency by refining component behavior and
+              interaction patterns across the platform, reducing inconsistencies
+              in user experience
             </li>
           </ul>
         </article>
@@ -220,6 +249,9 @@ import SiteLayout from "../layouts/SiteLayout.astro";
             </h3>
             <p class="text-sm text-slate-600">Aug 2021 – Aug 2022</p>
           </header>
+          <p class="mt-1 text-sm text-slate-700">
+            Real Estate / Property Management
+          </p>
           <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-700">
             <li>
               Led brokerage operations, coordinating workflows across agents and
@@ -335,17 +367,29 @@ import SiteLayout from "../layouts/SiteLayout.astro";
       </section>
 
       <!-- Education -->
-      <section class="space-y-3">
+      <section class="space-y-4">
         <h2 class="text-xl font-semibold">Education</h2>
-        <ul class="space-y-2 text-sm text-slate-700">
-          <li><span class="font-semibold">Degree</span> — School, Year</li>
-          <li><span class="font-semibold">Certification</span> — Issuer</li>
-        </ul>
-      </section>
 
-      <footer class="border-t border-slate-200 pt-6 text-sm text-slate-600">
-        <p>© {new Date().getFullYear()} Ethan Nguyen</p>
-      </footer>
+        <div class="space-y-4">
+          <div>
+            <p class="font-semibold text-slate-900">
+              Bachelor of Science in Computer Science
+            </p>
+            <p class="text-sm text-slate-600">
+              Kennesaw State University · 2016 – 2020
+            </p>
+          </div>
+
+          <div>
+            <p class="font-semibold text-slate-900">
+              Associate of Science in Engineering
+            </p>
+            <p class="text-sm text-slate-600">
+              Georgia State University · 2013 – 2016
+            </p>
+          </div>
+        </div>
+      </section>
     </section>
   </div>
 </SiteLayout>
