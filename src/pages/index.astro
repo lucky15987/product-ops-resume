@@ -2,7 +2,7 @@
 import SiteLayout from "../layouts/SiteLayout.astro";
 ---
 
-<SiteLayout title="Ethan Nguyen | Product Operations">
+<SiteLayout title="Ethan Nguyen | Technical Support & Infrastructure">
   <div class="grid gap-10 lg:grid-cols-[340px_1fr]">
     <!-- Left Column -->
     <aside class="lg:sticky lg:top-10 lg:h-[calc(100vh-5rem)]">
@@ -11,10 +11,10 @@ import SiteLayout from "../layouts/SiteLayout.astro";
         <section>
           <h1 class="text-3xl font-semibold tracking-tight">Ethan Nguyen</h1>
           <p class="mt-1 text-lg text-slate-700">
-            Product Operations | Fintech & Workflow Systems
+            Technical Support | Automation | Cloud & Infrastructure
           </p>
           <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Automation Process Integration • Escalations • Feedback Loops
+            SaaS Troubleshooting • Incident Response • Systems Automation
           </p>
         </section>
 
@@ -66,10 +66,10 @@ import SiteLayout from "../layouts/SiteLayout.astro";
             Core Skills
           </h2>
           <ul class="space-y-1 text-sm text-slate-700">
-            <li>Process Design</li>
-            <li>Cross-Team Enablement</li>
-            <li>Tooling & Automation</li>
-            <li>Metrics & Data Analytics</li>
+            <li>Technical Troubleshooting</li>
+            <li>Incident Response</li>
+            <li>Systems & Workflow Automation</li>
+            <li>Technical Documentation</li>
           </ul>
         </section>
 
@@ -78,12 +78,12 @@ import SiteLayout from "../layouts/SiteLayout.astro";
           <h2
             class="text-sm font-semibold uppercase tracking-wide text-slate-500"
           >
-            Tools
+            Technical Environment
           </h2>
           <div class="flex flex-wrap gap-2">
             {
               [
-                "PowerBI",
+                "Power BI",
                 "Notion",
                 "Linear",
                 "Slack",
@@ -91,12 +91,30 @@ import SiteLayout from "../layouts/SiteLayout.astro";
                 "Salesforce",
                 "DataDog",
                 "Incident.io",
+                "REST APIs",
               ].map((tool) => (
                 <span class="rounded-full border border-slate-200 px-3 py-1 text-xs text-slate-700">
                   {tool}
                 </span>
               ))
             }
+          </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="space-y-2">
+          <h2
+            class="text-sm font-semibold uppercase tracking-wide text-slate-500"
+          >
+            Certifications
+          </h2>
+
+          <div>
+            <p class="text-sm font-medium text-slate-900">
+              Microsoft Certified
+            </p>
+            <p class="text-sm text-slate-700">Azure AI Fundamentals</p>
+            <p class="mt-1 text-xs text-slate-500">AI-900 · June 2026</p>
           </div>
         </section>
       </div>
@@ -109,10 +127,19 @@ import SiteLayout from "../layouts/SiteLayout.astro";
         <h2 class="text-xl font-semibold">About</h2>
 
         <p class="mt-4 max-w-2xl leading-relaxed text-slate-700">
-          I build operating systems for product teams. In fintech environments,
-          I improve SLA performance, standardize workflows, and establish
-          feedback loops across Support, Engineering, and Product to reduce
-          friction and accelerate execution.
+          I solve technical problems across SaaS platforms, support workflows,
+          and self-hosted infrastructure. My professional experience includes
+          investigating customer-impacting issues, reproducing defects,
+          coordinating incident response, and building automation that improves
+          how Support and Engineering work together.
+        </p>
+
+        <p class="mt-4 max-w-2xl leading-relaxed text-slate-700">
+          Outside of work, I design and maintain a Proxmox-based homelab where I
+          work with Linux, Docker, networking, DNS, VPNs, reverse proxies,
+          storage, backups, GPU acceleration, and secure remote access. I use
+          the environment to build practical systems, troubleshoot failures, and
+          strengthen my infrastructure knowledge.
         </p>
 
         <div class="mt-8 grid gap-8 sm:grid-cols-3">
@@ -120,10 +147,10 @@ import SiteLayout from "../layouts/SiteLayout.astro";
             <p
               class="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Workflow Systems
+              Troubleshooting
             </p>
             <p class="mt-2 text-sm leading-snug text-slate-700">
-              Issue Intake • Escalation • SLA Optimization
+              Data Logs • Defect Reproduction • Root-Cause Analysis
             </p>
           </div>
 
@@ -131,10 +158,10 @@ import SiteLayout from "../layouts/SiteLayout.astro";
             <p
               class="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Cross-Team Alignment
+              Systems & Infrastructure
             </p>
             <p class="mt-2 text-sm leading-snug text-slate-700">
-              Support ↔ Engineering ↔ Product
+              Linux • Windows • Mac • Docker • Virtualization • Networking
             </p>
           </div>
 
@@ -142,10 +169,10 @@ import SiteLayout from "../layouts/SiteLayout.astro";
             <p
               class="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Tooling &amp; Insights
+              Automation &amp; Support
             </p>
             <p class="mt-2 text-sm leading-snug text-slate-700">
-              FreshService • Dashboards • AI Integrations
+              APIs • Dashboards • AI Integrations • Escalation Workflows
             </p>
           </div>
         </div>
@@ -167,32 +194,38 @@ import SiteLayout from "../layouts/SiteLayout.astro";
           <p class="mt-1 text-sm text-slate-700">Embedded Finance / Fintech</p>
           <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-700">
             <li>
-              Designed and implemented an automated escalation workflow
-              connecting FreshService, Slack, and Linear, reducing manual
-              escalation effort and improving engineering intake consistency
+              Investigate complex customer issues by analyzing logs, reproducing
+              defects, coordinating with Engineering, and communicating
+              resolutions to stakeholders.
             </li>
 
             <li>
-              Led incident response for high-impact platform issues, reducing
-              time-to-resolution by improving coordination across engineering
-              and operations
+              Lead incident response for high-impact platform issues,
+              coordinating Support, Engineering, and Product teams and
+              contributing to a 20% reduction in resolution time.
             </li>
 
             <li>
-              Built operational dashboards across FreshService Analytics, Power
-              BI, Looker, and Datadog, increasing visibility into support
-              performance and escalation trends
+              Designed and implemented an automated engineering escalation
+              workflow integrating Freshservice, Slack, Make, and Linear,
+              reducing manual effort by approximately 30%.
             </li>
 
             <li>
-              Standardized partner issue intake and escalation processes,
-              reducing cross-team friction and improving triage consistency
+              Built structured escalation workflows that improved triage
+              consistency and reduced friction between Support and Engineering.
             </li>
 
             <li>
-              Prototyped AI-assisted workflows (Claude, ChatGPT) to enhance
-              ticket triage, reducing repetitive analysis and improving
-              categorization accuracy
+              Developed operational dashboards using Power BI, Looker, Datadog,
+              and Freshservice Analytics to improve visibility into SLA
+              performance and escalation trends.
+            </li>
+
+            <li>
+              Designed an AI-assisted ticket triage workflow to classify,
+              summarize, and recommend routing while maintaining human review
+              for complex cases.
             </li>
           </ul>
         </article>
@@ -302,18 +335,45 @@ import SiteLayout from "../layouts/SiteLayout.astro";
         </article>
       </section>
 
-      <!-- Operational Systems -->
+      <!-- Technical Projects -->
       <section class="space-y-4">
-        <h2 class="text-xl font-semibold">Operational Systems</h2>
+        <h2 class="text-xl font-semibold">Technical Projects</h2>
 
         <div class="grid gap-4 sm:grid-cols-2">
           <a
             class="group rounded-2xl border border-slate-200 bg-white p-5 transition duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-sm"
+            href="/projects/homelab"
+          >
+            <h3 class="font-semibold">Personal Infrastructure Homelab</h3>
+
+            <p class="mt-2 text-sm text-slate-700">
+              Proxmox-based virtualization environment hosting Linux virtual
+              machines, Docker containers, networking services, storage,
+              automation, and secure remote access.
+            </p>
+
+            <p class="mt-3 text-sm text-slate-600">
+              Designed as a production-like learning environment for
+              troubleshooting Linux, DNS, networking, virtualization, GPU
+              acceleration, service availability, and infrastructure failures.
+            </p>
+
+            <ul class="mt-3 text-xs text-slate-600 space-y-1">
+              <li>• Virtualized Linux and container workloads</li>
+              <li>• Secure VPN and reverse-proxy access</li>
+              <li>• Monitoring, backups, storage, and media services</li>
+            </ul>
+
+            <p class="mt-4 text-xs text-slate-500 group-hover:text-slate-700">
+              View case study →
+            </p>
+          </a>
+
+          <a
+            class="group rounded-2xl border border-slate-200 bg-white p-5 transition duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-sm"
             href="/projects/escalation-automation"
           >
-            <h3 class="font-semibold">
-              End-to-End Escalation Automation System
-            </h3>
+            <h3 class="font-semibold">Engineering Escalation Automation</h3>
 
             <p class="mt-2 text-sm text-slate-700">
               Automated support-to-engineering escalation workflow across
@@ -341,7 +401,7 @@ import SiteLayout from "../layouts/SiteLayout.astro";
             class="group rounded-2xl border border-slate-200 bg-white p-5 transition duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-sm"
             href="/projects/ai-triage"
           >
-            <h3 class="font-semibold">AI-Powered Ticket Triage System</h3>
+            <h3 class="font-semibold">AI-Assisted Ticket Triage System</h3>
 
             <p class="mt-2 text-sm text-slate-700">
               Prototype system using AI to classify, prioritize, and route
