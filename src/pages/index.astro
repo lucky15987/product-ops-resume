@@ -1,5 +1,16 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
+
+const certifications = [
+  {
+    name: "Microsoft Certified: Azure AI Fundamentals",
+    code: "AI-900",
+    issuer: "Microsoft",
+    earned: "June 2026",
+    credentialUrl:
+      "https://learn.microsoft.com/en-us/users/ethann-0311/credentials/ab428523e533df1f?ref=https%3A%2F%2Fwww.linkedin.com%2FL",
+  },
+];
 ---
 
 <SiteLayout title="Ethan Nguyen | Technical Support & Infrastructure">
@@ -98,23 +109,6 @@ import SiteLayout from "../layouts/SiteLayout.astro";
                 </span>
               ))
             }
-          </div>
-        </section>
-
-        <!-- Certifications -->
-        <section class="space-y-2">
-          <h2
-            class="text-sm font-semibold uppercase tracking-wide text-slate-500"
-          >
-            Certifications
-          </h2>
-
-          <div>
-            <p class="text-sm font-medium text-slate-900">
-              Microsoft Certified
-            </p>
-            <p class="text-sm text-slate-700">Azure AI Fundamentals</p>
-            <p class="mt-1 text-xs text-slate-500">AI-900 · June 2026</p>
           </div>
         </section>
       </div>
@@ -423,6 +417,63 @@ import SiteLayout from "../layouts/SiteLayout.astro";
               View case study →
             </p>
           </a>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="space-y-4">
+        <div>
+          <h2 class="text-xl font-semibold">Certifications</h2>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          {
+            certifications.map((certification) => (
+              <a
+                href={certification.credentialUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View ${certification.name} credential`}
+                class="group rounded-2xl border border-slate-200 bg-white p-5 transition duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
+              >
+              
+                <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-sm font-semibold text-slate-700">
+                  MS
+                </div>
+
+                <div class="flex items-start justify-between gap-4">
+                  <div class="min-w-0">
+                    <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                      {certification.issuer}
+                    </p>
+
+                    <h3 class="mt-2 font-semibold leading-snug text-slate-900">
+                      {certification.name}
+                    </h3>
+
+                    <div class="mt-3 flex flex-wrap items-center gap-2 text-sm text-slate-600">
+                      <span class="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-700">
+                        {certification.code}
+                      </span>
+
+                      <span>Earned {certification.earned}</span>
+                    </div>
+                  </div>
+
+                  <span
+                    aria-hidden="true"
+                    class="shrink-0 text-lg text-slate-400 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-slate-700"
+                  >
+                    ↗
+                  </span>
+                </div>
+
+                <p class="mt-4 text-sm font-medium text-slate-600 transition group-hover:text-slate-900">
+                  View credential
+                </p>
+              </a>
+            ))
+          }
         </div>
       </section>
 
